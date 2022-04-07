@@ -1,0 +1,5 @@
+import time
+t = time.localtime()
+current_time = time.strftime("%I:%M:%S", t)
+print("Current Time: ",current_time)
+print ("Number of Minutes Since Midnight: ",int(t.tm_hour)*60+int(t.tm_min))
